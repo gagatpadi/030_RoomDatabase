@@ -1,5 +1,9 @@
 package com.example.testting.repositori
 
+import com.example.room.OfflineReposisotriSiswa
+import com.example.room.RepositoriSiswa
+
+
 interface ContainerApp {
     val repositoriSiswa : RepositoriSiswa
 }
@@ -12,7 +16,7 @@ class ContainerDataApp(private val context: Context):
     }
 }
 
-class AplikasiSiswa : Aplication() {
+class AplikasiSiswa : Application() {
     lateinit var container: ContainerApp
 
     override fun onCreate() {
